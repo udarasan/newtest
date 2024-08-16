@@ -26,6 +26,7 @@ public class BlogController {
     @PutMapping("/updatePost")
     public Blog updatePost(@RequestBody Blog blog){
         return blogRepository.save(blog);
+        //test
 
     }
     @DeleteMapping("/deletePost/{id}")
